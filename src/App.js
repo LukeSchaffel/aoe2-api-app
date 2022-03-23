@@ -3,6 +3,7 @@ import './App.css';
 import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom'
 import NavBar from './components/NavBar/NavBar.jsx';
+import CivilizationList from './pages/CivilizationList/CivilizationList';
 
 function App() {
   const [navItems, setNavItems] = useState([
@@ -14,6 +15,10 @@ function App() {
   return (
     <>
       <NavBar navItems={navItems} />
+      <Routes>
+        <Route path='/civilizations' element={<CivilizationList />}
+        />
+      </Routes>
     </>
   );
 }

@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom'
 import NavBar from './components/NavBar/NavBar.jsx';
 import CivilizationList from './pages/CivilizationList/CivilizationList';
 
+
 function App() {
   const [navItems, setNavItems] = useState([
     {url: "/civilizations", name: "Civilizations List"}, 
